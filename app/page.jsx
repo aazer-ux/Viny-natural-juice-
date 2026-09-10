@@ -9,6 +9,7 @@ import ProductCard from '@/components/ProductCard';
 import Cart from '@/components/Cart';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
+import PWAInstallPrompt from '@/components/PWAInstallPrompt';
 
 // Define the 4 products with their formats/prices and workspace images
 const PRODUCTS = [
@@ -593,6 +594,8 @@ export default function Home() {
         onUpdateQuantity={handleUpdateQuantity}
         onRemoveItem={handleRemoveItem}
       />
+
+      <PWAInstallPrompt />
     </div>
   );
 }
